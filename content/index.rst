@@ -1,7 +1,5 @@
-LESSON NAME
-===========
-
-Intro
+ColonyOS Tutorial
+=================
 
 .. prereq::
 
