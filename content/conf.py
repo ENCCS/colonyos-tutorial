@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "LESSON NAME"
-copyright = "2021, The contributors"
-author = "The contributors"
+project = "ColonyOS Tutorial"
+copyright = "2024, The contributors"
+author = "johan.kristiansson@ri.se"
 github_user = "ENCCS"
 github_repo_name = ""  # auto-detected from dirname if blank
 github_version = "main"

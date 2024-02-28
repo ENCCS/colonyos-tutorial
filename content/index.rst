@@ -3,13 +3,9 @@ LESSON NAME
 
 Intro
 
-
-
 .. prereq::
 
    prerequisites
-
-
 
 .. csv-table::
    :widths: auto
@@ -17,11 +13,21 @@ Intro
 
    20 min ; :doc:`filename`
 
-
 .. toctree::
    :maxdepth: 1
    :caption: The lesson
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Introduction
+
+   getting_started
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Tutorial - Image Processing
+
+   ml
 
 .. toctree::
    :maxdepth: 1
@@ -30,24 +36,21 @@ Intro
    quick-reference
    guide
 
-
-
 .. _learner-personas:
 
 Who is the course for?
 ----------------------
 
-
-
-
+This course is for people who want to learn about more about ColonyOS and how to use it.
 
 About the course
 ----------------
 
+This course is an introduction to ColonyOS. It is designed to be a hands-on course, where you will learn by doing. The course is divided into three parts:
 
-
-
-
+- Introduction
+- Tutorial - Image Processing
+- Tutorial - How implement a custom Executor
 
 See also
 --------
