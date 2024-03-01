@@ -20,6 +20,7 @@ On Linux and Mac, you can move the binaries to ``/usr/local/bin``. On Windows, y
 **IMPORTANT:** On Mac, the ``colonies`` and ``pollinator`` binaries will be blocked the first time they are started since they are not downloaded from AppStore nor signed by an registered developer. They can be unblocked by clicking the ``Open Anyway`` button in ``Privacy & Security`` settings. The button is available for about an hour after you try to start the colonies or pollinator commands.
 
 .. image:: img/mac_perm.png
+   :scale: 50%
 
 .. image:: img/mac_allow.png
 
