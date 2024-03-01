@@ -19,6 +19,12 @@ On Linux and Mac, you can move the binaries to ``/usr/local/bin``. On Windows, y
 
 **IMPORTANT:** On Mac, the ``colonies`` and ``pollinator`` binaries will be blocked the first time they are started since they are not downloaded from AppStore nor signed by an registered developer. They can be unblocked by clicking the ``Open Anyway`` button in ``Privacy & Security`` settings. The button is available for about an hour after you try to start the colonies or pollinator commands.
 
+.. image:: img/mac_perm.png
+
+.. image:: img/mac_allow.png
+
+Verify installation
+-------------------
 You also need valid creadentials to access the Colonies server (an env files). Or, you can also set up your own Colonies server by following the instructions `here <https://colonyos.github.io/documentation/install.html>`_.
 
 Verify that the installation was successful by running the following command:
@@ -59,7 +65,6 @@ You may also want to set permissions to run Docker without sudo.
 
 On Mac and Windows, Docker can be installed by downloading the `Docker website <https://www.docker.com/products/docker-desktop>`_  
 website
-
 
 Getting started
 ===============
