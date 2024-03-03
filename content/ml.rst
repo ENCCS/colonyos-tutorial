@@ -50,7 +50,7 @@ If the dataset is already stored in Colonies CFS, you can copy the dataset direc
 
 .. code-block:: console
 
-    colonies fs sync /water ./cfs/data/water
+    colonies fs sync -l /water -d ./cfs/data/water
 
 The dataset will upload next time the project run and will be available in the container at these directories:
 

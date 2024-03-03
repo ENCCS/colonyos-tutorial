@@ -377,6 +377,10 @@ remote executor will then automatically sync the data to the container before th
 
 .. code-block:: console 
 
+   colonies function submit --spec cat.json  --follow
+
+.. code-block:: console 
+
     INFO[0000] Process submitted                  ProcessId=d81e3ea76afd5d45902c494a77cf72ab6046e1cf8700e8ac36b6f5a7168a4bc4
     INFO[0000] Printing logs from process         ProcessId=d81e3ea76afd5d45902c494a77cf72ab6046e1cf8700e8ac36b6f5a7168a4bc4
     hi!
