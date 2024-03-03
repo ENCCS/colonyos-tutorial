@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation &mdash; ColonyOS Tutorial  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=0c089442" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../_static/overrides.css?v=0572569b" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=187304be"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
+        <script src="../_static/minipres.js?v=a0d29692"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Introduction" href="../ml/" />
+    <link rel="prev" title="ColonyOS Tutorial" href="../" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            ColonyOS Tutorial
+              <img src="../_static/ENCCS.jpg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#verify-installation">Verify installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#to-run-an-exector-optional">To run an exector (optional)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#getting-started">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#executing-functions">Executing functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#running-a-local-executor">Running a local executor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#handling-data">Handling data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#pollinator">Pollinator</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorial - Image Processing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ml/">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ml/#id1">Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ml/#build-a-docker-container-optional">Build a Docker container (optional)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ml/#training-the-model">Training the model</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quick-reference/">Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/">Instructor’s guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">ColonyOS Tutorial</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Installation</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ENCCS/content/blob/main/content/getting_started.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h1>
+<p>You need to download and install two different CLI binaries.</p>
+<ul class="simple">
+<li><p>The Colonies CLI - <a class="reference external" href="https://github.com/colonyos/colonies/releases/tag/v1.7.12">Download here</a>!</p></li>
+<li><p>The Pollinator CLI - <a class="reference external" href="https://github.com/colonyos/pollinator/releases/tag/v1.0.4">Download here</a>!</p></li>
+</ul>
+<p>For Apple silicon, choose arm64. For other Macs, choose amd64. For Linux, choose amd64. For Windows, choose amd64.</p>
+<p>Install the <code class="docutils literal notranslate"><span class="pre">colonies</span></code> and <code class="docutils literal notranslate"><span class="pre">pollinator</span></code> binaries by moving them to a directory in your PATH.
+On Linux and Mac, you can move the binaries to <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code>. On Windows, you can move the binaries to <code class="docutils literal notranslate"><span class="pre">C:\Windows\System32</span></code>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">tar -xvf colonies_v1.7.12_linux_amd64.tar.gz</span>
+<span class="go">tar -xvf pollinator_v1.0.4_linux_amd64.tar.gz</span>
+<span class="go">sudo cp colonies_v1.7.12_linux_amd64/colonies /usr/local/bin</span>
+<span class="go">sudo cp pollinator_v1.0.4_linux_amd64/pollinator /usr/local/bin</span>
+</pre></div>
+</div>
+<p><strong>IMPORTANT:</strong> On Mac, the <code class="docutils literal notranslate"><span class="pre">colonies</span></code> and <code class="docutils literal notranslate"><span class="pre">pollinator</span></code> binaries will be blocked the first time they are started since they are not downloaded from AppStore nor signed by an registered developer. They can be unblocked by clicking the <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Anyway</span></code> button in <code class="docutils literal notranslate"><span class="pre">Privacy</span> <span class="pre">&amp;</span> <span class="pre">Security</span></code> settings. The button is available for about an hour after you try to start the colonies or pollinator commands.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/mac_perm.png"><img alt="../_images/mac_perm.png" src="../_images/mac_perm.png" style="width: 372.0px; height: 418.0px;" /></a>
+</figure>
+<img alt="../_images/mac_allow.png" src="../_images/mac_allow.png" />
+<section id="verify-installation">
+<h2>Verify installation<a class="headerlink" href="#verify-installation" title="Link to this heading"></a></h2>
+<p>You also need valid creadentials to access the Colonies server (an env files). Or, you can also set up your own Colonies server by following the instructions <a class="reference external" href="https://colonyos.github.io/documentation/install.html">here</a>.</p>
+<p>Verify that the installation was successful by running the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">source my-env-file</span>
+<span class="go">colonies executor ls</span>
+</pre></div>
+</div>
+<p>You should see a list of executors in the colony.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">╭──────────────────┬────────────────────┬────────────────┬─────────────────────╮</span>
+<span class="go">│ NAME             │ TYPE               │ LOCATION       │ LAST HEARD FROM     │</span>
+<span class="go">├──────────────────┼────────────────────┼────────────────┼─────────────────────┤</span>
+<span class="go">│ icekube          │ container-executor │ RISE, Sweden   │ 2024-02-28 21:11:34 │</span>
+<span class="go">│ dev              │ container-executor │ Rutvik, Sweden │ 2024-02-28 21:11:35 │</span>
+<span class="go">│ leonardo-booster │ container-executor │ Cineca, Italy  │ 2024-02-27 18:50:11 │</span>
+<span class="go">│ lumi-std         │ container-executor │ CSC, Finland   │ 2024-02-28 21:11:43 │</span>
+<span class="go">╰──────────────────┴────────────────────┴────────────────┴─────────────────────╯</span>
+</pre></div>
+</div>
+</section>
+<section id="to-run-an-exector-optional">
+<h2>To run an exector (optional)<a class="headerlink" href="#to-run-an-exector-optional" title="Link to this heading"></a></h2>
+<p>To run your own executor, you also need to install Docker. On Linux (e.g Ubuntu), Docker can be installed by
+running the following commands:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo apt-get update</span>
+<span class="go">sudo apt-get install docker.io</span>
+</pre></div>
+</div>
+<p>You may also want to set permissions to run Docker without sudo.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo usermod -aG docker $USER</span>
+</pre></div>
+</div>
+<p>On Mac and Windows, Docker can be installed by downloading the <a class="reference external" href="https://www.docker.com/products/docker-desktop">Docker website</a>
+website</p>
+</section>
+</section>
+<section id="getting-started">
+<h1>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h1>
+<p>The Colonies CLI is a command line tool that allows you to interact with the Colonies API. It is a powerful tool that can be used to execute functions, manage processes, or deploy executors in a colony. To use the Colonies CLI, you first need to export several environmental variables.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">export COLONIES_SERVER_TLS=&quot;true&quot;</span>
+<span class="go">export COLONIES_SERVER_HOST=&quot;server.colonyos.io&quot;</span>
+<span class="go">export COLONIES_SERVER_PORT=&quot;443&quot;</span>
+<span class="go">export COLONIES_COLONY_NAME=&quot;hpc&quot;</span>
+<span class="go">export COLONIES_PRVKEY=&quot;e7957ca33481ce5cebc2571dea98da32d24fbe3db2d6d0916ec0165a26292299&quot;</span>
+<span class="go">export COLONIES_EXECUTOR_NAME=&quot;johan-laptop&quot;</span>
+<span class="go">export EXECUTOR_FS_DIR=&quot;$HOME/.colonies/cfs&quot;</span>
+<span class="go">export EXECUTOR_PARALLEL_CONTAINERS=&quot;true&quot;</span>
+<span class="go">export EXECUTOR_GPU=&quot;true&quot;</span>
+<span class="go">export AWS_S3_ENDPOINT=&quot;s3.colonyos.io:443&quot;</span>
+<span class="go">export AWS_S3_ACCESSKEY=&quot;accesskey&quot;</span>
+<span class="go">export AWS_S3_SECRETKEY=&quot;secretkey&quot;</span>
+<span class="go">export AWS_S3_REGION_KEY=&quot;&quot;</span>
+<span class="go">export AWS_S3_BUCKET=&quot;hpc&quot;</span>
+<span class="go">export AWS_S3_TLS=&quot;true&quot;</span>
+<span class="go">export AWS_S3_SKIPVERIFY=&quot;false&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">source env_file</span>
+</pre></div>
+</div>
+<p>The Colonies CLI has several subcommands. It always possible to get more help by adding the <cite>–help</cite> flag to the command, for example:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">colonies --help</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Colonies CLI tool</span>
+
+<span class="go">Usage:</span>
+<span class="go">  colonies [command]</span>
+
+<span class="go">Available Commands:</span>
+<span class="go">  attribute   Manage process attributes</span>
+<span class="go">  cluster     Manage clusters</span>
+<span class="go">  colony      Manage colonies</span>
+<span class="go">  completion  Generate the autocompletion script for the specified shell</span>
+<span class="go">  config      Show currently used configuration</span>
+<span class="go">  cron        Manage cron</span>
+<span class="go">  database    Manage internal database</span>
+<span class="go">  dev         Start a development server</span>
+<span class="go">  executor    Manage executors</span>
+<span class="go">  fs          Manage file storage</span>
+<span class="go">  function    Manage functions</span>
+<span class="go">  generator   Manage generators</span>
+<span class="go">  help        Help about any command</span>
+<span class="go">  key         Manage private keys</span>
+<span class="go">  log         Manage logging</span>
+<span class="go">  monitor     Manage Prometheus monitoring</span>
+<span class="go">  process     Manage processes</span>
+<span class="go">  server      Manage production server</span>
+<span class="go">  user        Manage users</span>
+<span class="go">  workflow    Manage workflows</span>
+
+<span class="go">Flags:</span>
+<span class="go">  -h, --help              help for colonies</span>
+<span class="go">      --insecure          Disable TLS and use HTTP</span>
+<span class="go">      --skip-tls-verify   Skip TLS certificate verification</span>
+<span class="go">  -v, --verbose           Verbose (debugging)</span>
+
+<span class="go">Use &quot;colonies [command] --help&quot; for more information about a command.</span>
+</pre></div>
+</div>
+<p>Or, to get help about the function subcommand.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">colonies function --help</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Manage functions</span>
+
+<span class="go">Usage:</span>
+<span class="go">  colonies function [command]</span>
+
+<span class="go">Available Commands:</span>
+<span class="go">  exec        Execute a Function</span>
+<span class="go">  ls          List all Functions</span>
+<span class="go">  register    Register a Function to an Executor</span>
+<span class="go">  remove      Remove a Function from an Executor  Hint: use &#39;colonies executor ls --full&#39; to get the functionid</span>
+<span class="go">  submit      Submit a Function specification</span>
+
+<span class="go">Flags:</span>
+<span class="go">  -h, --help   help for function</span>
+
+<span class="go">Global Flags:</span>
+<span class="go">      --insecure          Disable TLS and use HTTP</span>
+<span class="go">      --skip-tls-verify   Skip TLS certificate verification</span>
+<span class="go">  -v, --verbose           Verbose (debugging)</span>
+
+<span class="go">Use &quot;colonies function [command] --help&quot; for more information about a command.</span>
+</pre></div>
+</div>
+</section>
+<section id="executing-functions">
+<h1>Executing functions<a class="headerlink" href="#executing-functions" title="Link to this heading"></a></h1>
+<p>Let’s list all executors in the available in the colony. The colony is distributed network of executors running somehwere on the Internet. An executor is responsible for executing functions.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">colonies executor ls</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">╭──────────────────┬────────────────────┬────────────────┬─────────────────────╮</span>
+<span class="go">│ NAME             │ TYPE               │ LOCATION       │ LAST HEARD FROM     │</span>
+<span class="go">├──────────────────┼────────────────────┼────────────────┼─────────────────────┤</span>
+<span class="go">│ leonardo-booster │ container-executor │ Cineca, Italy  │ 2024-02-28 11:28:11 │</span>
+<span class="go">│ icekube          │ container-executor │ RISE, Sweden   │ 2024-02-28 11:27:06 │</span>
+<span class="go">│ dev              │ container-executor │ Rutvik, Sweden │ 2024-02-28 11:27:19 │</span>
+<span class="go">│ lumi-std         │ container-executor │ CSC, Finland   │ 2024-02-28 11:28:00 │</span>
+<span class="go">╰──────────────────┴────────────────────┴────────────────┴─────────────────────╯</span>
+</pre></div>
+</div>
+<p>One way of executing a function is to submit a function specification. The example below
+runs the command <cite>echo Hello, World</cite> in a container based on <cite>ubuntu:20.04</cite> on the LUMI supercomputer.
+The function is allowed to use 10GiB of memory and 1 CPU core.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;conditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;executortype&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;container-executor&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;executornames&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;lumi-std&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;nodes&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;processes-per-node&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;mem&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10Gi&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;cpu&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1000m&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;gpu&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;walltime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;funcname&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;execute&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;kwargs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;cmd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;echo Hello, World&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;docker-image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ubuntu:20.04&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;maxexectime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">55</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;maxretries&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">colonies function submit --spec hello.json  --follow</span>
+</pre></div>
+</div>
+<p>Depending on the load on the LUMI supercomputer, the process may take a few minutes to start. The <cite>–follow</cite> flag will print the logs from the process as soon as they are available.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">INFO[0000] Process submitted                 ProcessId=ad733c56110d444f9f98bfbfa9d96576039c4829a652c2307b86311650075fc3</span>
+<span class="go">INFO[0000] Printing logs from process        ProcessId=ad733c56110d444f9f98bfbfa9d96576039c4829a652c2307b86311650075fc3</span>
+<span class="go">Hello, World</span>
+<span class="go">INFO[0165] Process finished successfull      ProcessId=ad733c56110d444f9f98bfbfa9d96576039c4829a652c2307b86311650075fc3</span>
+</pre></div>
+</div>
+</section>
+<section id="running-a-local-executor">
+<h1>Running a local executor<a class="headerlink" href="#running-a-local-executor" title="Link to this heading"></a></h1>
+<p>Docker compose can be used to run a local executor.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">source env</span>
+<span class="go">mkdir -p ~/colonies/cfs</span>
+<span class="go">git clone https://github.com/colonyos/executors</span>
+<span class="go">cd executors/docker</span>
+<span class="go">docker-compose up</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Creating docker_executor ... done</span>
+<span class="go">Attaching to docker_executor</span>
+<span class="go">docker_executor    | time=&quot;2024-02-28T14:27:48Z&quot; level=error msg=&quot;Failed to set location long&quot;</span>
+<span class="go">docker_executor    | time=&quot;2024-02-28T14:27:48Z&quot; level=error msg=&quot;Failed to set location long&quot;</span>
+<span class="go">docker_executor    | time=&quot;2024-02-28T14:27:49Z&quot; level=info msg=Self-registered ColonyName=hpc ExecutorName=johan-laptop</span>
+<span class="go">docker_executor    | time=&quot;2024-02-28T14:27:49Z&quot; level=info msg=&quot;Docker Executor started&quot; ColoniesInsecure=false ColoniesServerHost=server.colonyos.io ColoniesServerPort=443 ColonyName=hpc ColonyPrvKey=&quot;***********************&quot; ExecutorId=c6ffb4074f7618659eb5fa00040059a4aed5f16277b0520885809d2f793af532 ExecutorName=johan-laptop ExecutorPrvKey=&quot;***********************&quot; ExecutorType=container-executor FsDir=/home/johan/.colonies/cfs GPU=false HardwareCPU= HardwareGPUCount=0 HardwareGPUMemory= HardwareGPUName= HardwareGPUNodesCount=0 HardwareMemory= HardwareModel=n/a HardwareNodes=1 HardwareStorage= K8sNamespace= K8sPVC= Latitude=0 LocationDesc=n/a Longitude=0 ParallelContainers=false SoftwareName=&quot;colonyos/dockerexecutor:v1.0.1&quot; SoftwareType=docker SoftwareVersion=&quot;colonyos/dockerexecutor:v1.0.1&quot; Verbose=true</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">colonies executor ls</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">╭──────────────────┬────────────────────┬────────────────┬─────────────────────╮</span>
+<span class="go">│ NAME             │ TYPE               │ LOCATION       │ LAST HEARD FROM     │</span>
+<span class="go">├──────────────────┼────────────────────┼────────────────┼─────────────────────┤</span>
+<span class="go">│ leonardo-booster │ container-executor │ Cineca, Italy  │ 2024-02-27 18:50:11 │</span>
+<span class="go">│ lumi-std         │ container-executor │ CSC, Finland   │ 2024-02-28 15:27:46 │</span>
+<span class="go">│ johan-laptop     │ container-executor │ n/a            │ 2024-02-28 15:27:49 │</span>
+<span class="go">│ icekube          │ container-executor │ RISE, Sweden   │ 2024-02-28 15:28:07 │</span>
+<span class="go">│ dev              │ container-executor │ Rutvik, Sweden │ 2024-02-28 15:28:09 │</span>
+<span class="go">╰──────────────────┴────────────────────┴────────────────┴─────────────────────╯</span>
+</pre></div>
+</div>
+</section>
+<section id="handling-data">
+<h1>Handling data<a class="headerlink" href="#handling-data" title="Link to this heading"></a></h1>
+<p>Execution of functions often involves handling data. The Colonies CLI has a subcommand for managing file storage. The file storage is a distributed file system called Colony FS (CFS), and can be used to store input data, output data, and intermediate data. Data stored in CFS is access from all executors in the colony.</p>
+<p>The command below list all labels.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">colonies fs label ls</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">╭───────────────────────────┬───────╮</span>
+<span class="go">│ LABEL                     │ FILES │</span>
+<span class="go">├───────────────────────────┼───────┤</span>
+<span class="go">│ /water/Masks              │ 2841  │</span>
+<span class="go">│ /water/Images             │ 2841  │</span>
+<span class="go">│ /water                    │ 1     │</span>
+<span class="go">╰───────────────────────────┴───────╯</span>
+</pre></div>
+</div>
+<p>Let’s create a new label and store a file in it.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">mkdir myfiles</span>
+<span class="go">echo &quot;hi!&quot; &gt; myfiles/hello.txt</span>
+<span class="go">colonies fs sync -l /myfiles -d myfiles</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">INFO[0000] Calculating sync plans</span>
+<span class="go">Analyzing /home/johan/dev/github/enccs/~ ... done!</span>
+<span class="go">INFO[0000] Sync plans completed                          Conflict resolution=replace-remote Conflicts=0 Download=0 Upload=1</span>
+<span class="go">INFO[0000] Add --syncplan flag to view the sync plan in more detail</span>
+
+<span class="go">Are you sure you want to continue? (yes,no): yes</span>
+<span class="go">Uploading /myfiles                       ... done! [4B]</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">╭───────────────────────────┬───────╮</span>
+<span class="go">│ LABEL                     │ FILES │</span>
+<span class="go">├───────────────────────────┼───────┤</span>
+<span class="go">│ /water/Masks              │ 2841  │</span>
+<span class="go">│ /water/Images             │ 2841  │</span>
+<span class="go">│ /water                    │ 1     │</span>
+<span class="go">│ /myfiles                  │ 1     │</span>
+<span class="go">╰───────────────────────────┴───────╯</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Try to sync to another computer or another directory.</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">colonies fs sync -l /myfiles -d myfiles2</span>
+</pre></div>
+</div>
+<p>That’s great, but how do I use the data in a function? It possible to reference the data in the function specification. The
+remote executor will then automatically sync the data to the container before the function is executed. Let’s try that.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;conditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;executortype&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;container-executor&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;executornames&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;icekube&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;nodes&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;processes-per-node&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;mem&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10Gi&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;cpu&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1000m&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;gpu&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;walltime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;funcname&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;execute&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;kwargs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;cmd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cat /cfs/myfiles/hello.txt&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;docker-image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ubuntu:20.04&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;fs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;mount&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/cfs&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;dirs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/myfiles&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/myfiles&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;keepfiles&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;onconflicts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;onstart&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;keeplocal&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="nt">&quot;onclose&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;keeplocal&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;maxexectime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">55</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;maxretries&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">colonies function submit --spec cat.json  --follow</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">INFO[0000] Process submitted                  ProcessId=d81e3ea76afd5d45902c494a77cf72ab6046e1cf8700e8ac36b6f5a7168a4bc4</span>
+<span class="go">INFO[0000] Printing logs from process         ProcessId=d81e3ea76afd5d45902c494a77cf72ab6046e1cf8700e8ac36b6f5a7168a4bc4</span>
+<span class="go">hi!</span>
+<span class="go">INFO[0013] Process finished successfully      ProcessId=d81e3ea76afd5d45902c494a77cf72ab6046e1cf8700e8ac36b6f5a7168a4bc4</span>
+</pre></div>
+</div>
+<p>Nice, the function executed the command <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">/cfs/myfiles/hello.txt</span></code> and printed the content of the file <code class="docutils literal notranslate"><span class="pre">hello.txt</span></code> to the console.</p>
+<p>Let’s explore a tool called Pollinator to avoid spending time on creating complex JSON files.</p>
+</section>
+<section id="pollinator">
+<h1>Pollinator<a class="headerlink" href="#pollinator" title="Link to this heading"></a></h1>
+<p>Pollinator is a tool that automatically sync a local file to CFS and create a function specification. It abscracts away the complexity of creating function specifications, making it possible to develop on a local computer while executing on a powerful supercomputer.</p>
+<p>Let’s create a new Pollinator project and use the ICE Kubernetes cluster for function execution.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">mkdir myproject</span>
+<span class="go">cd myproject</span>
+<span class="go">pollinator new -n icekube</span>
+</pre></div>
+</div>
+<p>As you can see, a file called <code class="docutils literal notranslate"><span class="pre">project.yml</span></code> is created. Pollinator uses the <code class="docutils literal notranslate"><span class="pre">project.yml</span></code> file to generate function specifications.
+The <code class="docutils literal notranslate"><span class="pre">project.yml</span></code> file contains some generic configuration, e.g. how resources should be allocated. It also contains a reference to a file called <code class="docutils literal notranslate"><span class="pre">main.py</span></code>, which contains some Python code we would like to execute.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">projectname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a79b82a96a5c132374b26beb78953112f084055e29b73d63fe95fcdce5c4981b</span>
+<span class="nt">conditions</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">executorNames</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">icekube</span>
+<span class="w">  </span><span class="nt">nodes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">  </span><span class="nt">processesPerNode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">  </span><span class="nt">cpu</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000m</span>
+<span class="w">  </span><span class="nt">mem</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000Mi</span>
+<span class="w">  </span><span class="nt">walltime</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">600</span>
+<span class="w">  </span><span class="nt">gpu</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">count</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+<span class="nt">environment</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">docker</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python:3.12-rc-bookworm</span>
+<span class="w">  </span><span class="nt">rebuildImage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">init-cmd</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip3 install numpy</span>
+<span class="w">  </span><span class="nt">cmd</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python3</span>
+<span class="w">  </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main.py</span>
+</pre></div>
+</div>
+<p>Also, notice that a directory called <code class="docutils literal notranslate"><span class="pre">cfs</span></code> is created. The <code class="docutils literal notranslate"><span class="pre">cfs</span></code> directory contains three subdirectories:</p>
+<ul class="simple">
+<li><p>src</p></li>
+<li><p>result</p></li>
+<li><p>data</p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">src</span></code> directory is synchronized before the container starts. The <code class="docutils literal notranslate"><span class="pre">data</span></code> directory is also synchronized before the container starts, but not deleted after the container has run to completion. The <code class="docutils literal notranslate"><span class="pre">result</span></code> directory is synchronized after the container has finished. This is a useful place to store generated data, .e.g  model data after training a neural network.</p>
+<p>Let’s run a simple hello world Python program on Kubernetes.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, World&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">echo &#39;print(&quot;Hello, World&quot;)&#39; &gt; cfs/src/main.py</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pollinator run --follow</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">INFO[0000] Process submitted, ProcessID=24519ebe1d97c0627c971623e33e4a4963f1d8d55920c1a0437b4ad12f3be298</span>
+<span class="go">INFO[0000] Follow process at https://dashboard.colonyos.io/process?processid=24519ebe1d97c0627c971623e33e4a4963f1d8d55920c1a0437b4ad12f3be298</span>
+<span class="go">Collecting numpy</span>
+<span class="go">  Obtaining dependency information for numpy from https://files.pythonhosted.org/packages/0f/50/de23fde84e45f5c4fda2488c759b69990fd4512387a8632860f3ac9cd225/numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata</span>
+<span class="go">  Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)</span>
+<span class="go">     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.0/61.0 kB 1.2 MB/s eta 0:00:00</span>
+<span class="go">Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.0 MB)</span>
+<span class="go">   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.0/18.0 MB 50.8 MB/s eta 0:00:00</span>
+<span class="go">Installing collected packages: numpy</span>
+<span class="go">Successfully installed numpy-1.26.4</span>
+<span class="go">WARNING: Running pip as the &#39;root&#39; user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv</span>
+
+<span class="go">[notice] A new release of pip is available: 23.2.1 -&gt; 24.0</span>
+<span class="go">[notice] To update, run: pip install --upgrade pip</span>
+<span class="go">Hello, World</span>
+<span class="go">INFO[0017] Process finished successfully</span>
+</pre></div>
+</div>
+<p>To run it on the LUMI supercomputer, just change the executor name in the project.yml file to <code class="docutils literal notranslate"><span class="pre">lumi-std</span></code> and run <code class="docutils literal notranslate"><span class="pre">pollinator</span> <span class="pre">run</span> <span class="pre">--follow</span></code> again.</p>
+<p>We can also check the status of the process by typing:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">colonies process get -p 24519ebe1d97c0627c971623e33e4a4963f1d8d55920c1a0437b4ad12f3be298</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">╭───────────────────────────────────────────────────────────────────────────────────────╮</span>
+<span class="go">│ Process                                                                               │</span>
+<span class="go">├────────────────────┬──────────────────────────────────────────────────────────────────┤</span>
+<span class="go">│ Id                 │ 24519ebe1d97c0627c971623e33e4a4963f1d8d55920c1a0437b4ad12f3be298 │</span>
+<span class="go">│ IsAssigned         │ True                                                             │</span>
+<span class="go">│ InitiatorID        │ bcaeac1a507036f7fed0be9d38c43ba973be7c0064d1b0b010ede2f088093b3f │</span>
+<span class="go">│ Initiator          │ johan                                                            │</span>
+<span class="go">│ AssignedExecutorID │ ef9943aa7a7e9aec2e00bac8a739fa5886d9df8fe648349596b44054e18d9d7c │</span>
+<span class="go">│ AssignedExecutorID │ Successful                                                       │</span>
+<span class="go">│ PriorityTime       │ 1708712143825558275                                              │</span>
+<span class="go">│ SubmissionTime     │ 2024-02-28 19:15:43                                              │</span>
+<span class="go">│ StartTime          │ 2024-02-28 19:15:43                                              │</span>
+<span class="go">│ EndTime            │ 2024-02-28 19:15:43                                              │</span>
+<span class="go">│ WaitDeadline       │ 0001-01-01 00:53:28                                              │</span>
+<span class="go">│ ExecDeadline       │ 2024-02-28 19:25:42                                              │</span>
+<span class="go">│ WaitingTime        │ 35.886ms                                                         │</span>
+<span class="go">│ ProcessingTime     │ 16.542659s                                                       │</span>
+<span class="go">│ Retries            │ 0                                                                │</span>
+<span class="go">│ Input              │                                                                  │</span>
+<span class="go">│ Output             │                                                                  │</span>
+<span class="go">│ Errors             │                                                                  │</span>
+<span class="go">╰────────────────────┴──────────────────────────────────────────────────────────────────╯</span>
+<span class="go">╭─────────────────────────────────────────────────────────────────────╮</span>
+<span class="go">│ Function Specification                                              │</span>
+<span class="go">├─────────────┬───────────────────────────────────────────────────────┤</span>
+<span class="go">│ Func        │ execute                                               │</span>
+<span class="go">│ Args        │ None                                                  │</span>
+<span class="go">│ KwArgs      │ init-cmd:pip3 install numpy rebuild-image:false ar... │</span>
+<span class="go">│ MaxWaitTime │ -1                                                    │</span>
+<span class="go">│ MaxExecTime │ 599                                                   │</span>
+<span class="go">│ MaxRetries  │ 3                                                     │</span>
+<span class="go">│ Label       │ test_label                                            │</span>
+<span class="go">╰─────────────┴───────────────────────────────────────────────────────╯</span>
+<span class="go">╭───────────────────────────────────────╮</span>
+<span class="go">│ Conditions                            │</span>
+<span class="go">├──────────────────┬────────────────────┤</span>
+<span class="go">│ Colony           │ hpc                │</span>
+<span class="go">│ ExecutorNames    │ icekube            │</span>
+<span class="go">│ ExecutorType     │ container-executor │</span>
+<span class="go">│ Dependencies     │                    │</span>
+<span class="go">│ Nodes            │ 1                  │</span>
+<span class="go">│ CPU              │ 1000m              │</span>
+<span class="go">│ Memory           │ 1000Mi             │</span>
+<span class="go">│ Processes        │ 0                  │</span>
+<span class="go">│ ProcessesPerNode │ 1                  │</span>
+<span class="go">│ Storage          │ 0Mi                │</span>
+<span class="go">│ Walltime         │ 600                │</span>
+<span class="go">│ GPUName          │                    │</span>
+<span class="go">│ GPUs             │ 0                  │</span>
+<span class="go">│ GPUPerNode       │ 0                  │</span>
+<span class="go">│ GPUMemory        │ 0Mi                │</span>
+<span class="go">╰──────────────────┴────────────────────╯</span>
+<span class="go">╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮</span>
+<span class="go">│ Attributes                                                                                                               │</span>
+<span class="go">├──────────────────────────────────────────────────────────────────┬─────────────┬───────────────────────────────────┬─────┤</span>
+<span class="go">│ ATTRIBUTEID                                                      │ KEY         │ TYPE                              │     │</span>
+<span class="go">├──────────────────────────────────────────────────────────────────┼─────────────┼───────────────────────────────────┼─────┤</span>
+<span class="go">│ 652d5fbe8028b99c9e9bccce9ed9e6bd7846a6a569277b0ca3dc4edf05383e16 │ PROJECT_DIR │ /cfs/pollinator/a79b82a96a5c13... │ Env │</span>
+<span class="go">╰──────────────────────────────────────────────────────────────────┴─────────────┴───────────────────────────────────┴─────╯</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">colonies log get -p 24519ebe1d97c0627c971623e33e4a4963f1d8d55920c1a0437b4ad12f3be298</span>
+</pre></div>
+</div>
+<p>If we want to see the logs from the process, we can use the <cite>colonies log get</cite> command.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Collecting numpy</span>
+<span class="go">  Obtaining dependency information for numpy from https://files.pythonhosted.org/packages/0f/50/de23fde84e45f5c4fda2488c759b69990fd4512387a8632860f3ac9cd225/numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata</span>
+<span class="go">  Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)</span>
+<span class="go">     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.0/61.0 kB 1.2 MB/s eta 0:00:00</span>
+<span class="go">Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.0 MB)</span>
+<span class="go">   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.0/18.0 MB 50.8 MB/s eta 0:00:00</span>
+<span class="go">Installing collected packages: numpy</span>
+<span class="go">Successfully installed numpy-1.26.4</span>
+<span class="go">WARNING: Running pip as the &#39;root&#39; user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv</span>
+
+<span class="go">[notice] A new release of pip is available: 23.2.1 -&gt; 24.0</span>
+<span class="go">[notice] To update, run: pip install --upgrade pip</span>
+<span class="go">Hello, World</span>
+</pre></div>
+</div>
+<p>If we don’t know the process ID, we can use the <code class="docutils literal notranslate"><span class="pre">colonies</span> <span class="pre">log</span> <span class="pre">search</span></code> command to search for logs.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">colonies log search --text &quot;Hello, World&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">╭──────────────┬──────────────────────────────────────────────────────────────────╮</span>
+<span class="go">│ Timestamp    │ 2024-02-28 11:37:13                                              │</span>
+<span class="go">│ ExecutorName │ lumi-std                                                         │</span>
+<span class="go">│ ProcessID    │ ad733c56110d444f9f98bfbfa9d96576039c4829a652c2307b86311650075fc3 │</span>
+<span class="go">│ Text         │ Hello, World                                                     │</span>
+<span class="go">╰──────────────┴──────────────────────────────────────────────────────────────────╯</span>
+<span class="go">╭──────────────┬──────────────────────────────────────────────────────────────────╮</span>
+<span class="go">│ Timestamp    │ 2024-02-28 19:15:58                                              │</span>
+<span class="go">│ ExecutorName │ icekube                                                          │</span>
+<span class="go">│ ProcessID    │ 24519ebe1d97c0627c971623e33e4a4963f1d8d55920c1a0437b4ad12f3be298 │</span>
+<span class="go">│ Text         │ Hello, World                                                     │</span>
+<span class="go">╰──────────────┴──────────────────────────────────────────────────────────────────╯</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../" class="btn btn-neutral float-left" title="ColonyOS Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../ml/" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, The contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
